@@ -128,3 +128,35 @@ button {
   flex: 1;
   min-width: 240px;
 }
+.media-box {
+  max-width: 980px;
+  margin: 0 auto 20px auto;
+  padding: 12px;
+  border: 2px solid rgba(0,0,0,0.12);
+  border-radius: 10px;
+  background: rgba(255,255,255,0.6);
+}
+
+.media-player {
+  margin-top: 10px;
+}
+
+audio, video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 14px;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.download-btn:hover {
+  filter: brightness(1.05);
+}
