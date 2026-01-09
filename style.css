@@ -1,0 +1,314 @@
+.topnav {
+  background-color: #1e1e1e;
+  display: flex;
+  overflow: visible; 
+}
+
+.dropdown {
+  position: relative;
+  flex: 1;               
+}
+
+.dropbtn {
+  display: block;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.dropbtn:hover {
+  background-color: #007bff;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #1e1e1e;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  z-index: 999;
+}
+
+.dropdown-content a {
+  display: block;
+  flex: none;
+  padding: 12px 16px;
+  text-align: center;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #007bff;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+  display: block;
+}
+
+.topnav a {
+  flex: 1;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.topnav a:hover {
+  background-color: #007bff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.dropdown .dropbtn {
+  background-color: transparent;
+}
+
+.dropdown .dropbtn:hover {
+  background-color: #007bff;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.game-wrap {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.hud {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+#game {
+  width: 100%;
+  height: auto;
+  border: 2px solid #111;
+  border-radius: 10px;
+  background: #eaf6ff;
+  display: block;
+}
+
+.hint {
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+.restart-btn {
+  margin-top: 10px;
+}
+
+.shop {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.shop button {
+  flex: 1;
+  min-width: 240px;
+}
+.media-box {
+  max-width: 980px;
+  margin: 0 auto 20px auto;
+  padding: 12px;
+  border: 2px solid rgba(0,0,0,0.12);
+  border-radius: 10px;
+  background: rgba(255,255,255,0.6);
+}
+
+.media-player {
+  margin-top: 10px;
+}
+
+audio, video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 14px;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.download-btn:hover {
+  filter: brightness(1.05);
+}
+
+.home-hero {
+  padding: 26px 20px;
+  text-align: center;
+  border-bottom: 2px solid rgba(0,0,0,0.08);
+}
+
+.home-sub {
+  margin-top: 8px;
+  opacity: 0.85;
+}
+
+.home-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+
+.home-btn {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 12px;
+  text-decoration: none;
+  background: #1e1e1e;
+  color: #fff;
+  font-weight: bold;
+}
+
+.home-btn:hover {
+  background: #007bff;
+}
+
+.home-btn.primary {
+  background: #007bff;
+}
+
+.home-btn.primary:hover {
+  filter: brightness(1.05);
+}
+
+.home-mini {
+  margin-top: 14px;
+  opacity: 0.75;
+  font-size: 14px;
+}
+
+.home-main {
+  padding: 20px;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.card {
+  background: rgba(255,255,255,0.65);
+  border: 2px solid rgba(0,0,0,0.10);
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
+
+.card.wide {
+  margin-top: 14px;
+}
+
+.checklist {
+  margin: 10px 0 0 18px;
+}
+
+.tiny {
+  opacity: 0.75;
+  font-size: 14px;
+}
+
+.home-footer {
+  text-align: center;
+  padding: 14px 10px;
+  opacity: 0.8;
+}
+
+@media (max-width: 900px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.kontakt-section {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+
+.kontakt-hinweis {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 50px;
+  line-height: 1.6;
+}
+
+.bilder-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.bild-karte {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  width: 220px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bild-karte:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.18);
+}
+
+.bild-karte img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.bild-karte p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
