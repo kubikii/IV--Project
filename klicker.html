@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Klicker-Spiel</title>
+  <title>Klicker-Spiel – Karo & Timo</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -12,10 +12,10 @@
     <a href="index.html">Startseite</a>
 
     <div class="dropdown">
-      <a href="spiel.html" class="dropbtn">Spiele</a>
+      <a href="spiel.html" class="dropbtn active">Spiele</a>
       <div class="dropdown-content">
-        <a href="spiel.html">Dino-Spiel</a>
-        <a href="klicker.html">Klicker-Spiel</a>
+        <a href="spiel.html">🦖 Dino-Spiel</a>
+        <a href="klicker.html">💠 Klicker-Spiel</a>
       </div>
     </div>
 
@@ -24,38 +24,51 @@
   </nav>
 
   <header>
-    <h1>Klicker-Spiel</h1>
+    <h1>💠 Klicker-Spiel</h1>
   </header>
 
   <main>
-  <div class="game-wrap">
-    <div class="hud">
-      <span id="points">Punkte: 0</span>
-      <span id="pps">Pro Sekunde: 0</span>
+    <div class="game-wrap">
+      <div class="hud">
+        <span id="points">Punkte: 0</span>
+        <span id="pps">Pro Sekunde: 0</span>
+      </div>
+
+      <button id="clickBtn" type="button">+<span id="clickPowerDisplay">1</span> klicken</button>
+
+      <p class="hint">
+        Kaufe Upgrades, um Punkte automatisch zu sammeln oder jeden Klick stärker zu machen.
+      </p>
+
+      <div class="shop">
+        <button id="buyAuto" type="button">
+          🤖 Auto-Klicker<br>
+          <small>+1 Punkt/Sek &nbsp;|&nbsp; Kosten: <span id="autoCost">10</span></small>
+        </button>
+        <button id="buyMulti" type="button">
+          💪 Mehr Klick-Stärke<br>
+          <small>+1 pro Klick &nbsp;|&nbsp; Kosten: <span id="multiCost">25</span></small>
+        </button>
+        <button id="buyMega" type="button">
+          ⚡ Mega-Klicker<br>
+          <small>+5 Punkte/Sek &nbsp;|&nbsp; Kosten: <span id="megaCost">200</span></small>
+        </button>
+      </div>
+
+      <p class="hint" id="owned">
+        Auto-Klicker: 0 • Mega-Klicker: 0 • Klick-Stärke: 1
+      </p>
+
+      <button id="resetBtn" class="reset-btn" type="button">🗑 Spielstand zurücksetzen</button>
     </div>
+  </main>
 
-    <button id="clickBtn" class="restart-btn" type="button">+1 klicken</button>
-
-    <p class="hint">
-      Kaufe Upgrades: Sie geben dir Punkte pro Sekunde (automatisch).
-    </p>
-
-    <div class="shop">
-      <button id="buyAuto" type="button">Auto-Klicker kaufen (Kosten: <span id="autoCost">10</span>)</button>
-      <button id="buyMulti" type="button">Mehr Klick kaufen (Kosten: <span id="multiCost">25</span>)</button>
-    </div>
-
-    <p class="hint" id="owned">
-      Auto-Klicker: 0 • Klick-Stärke: 1
-    </p>
-  </div>
-</main>
-
+  <div id="milestone-toast"></div>
 
   <footer>
-    <p>© 2026 Karo & Timo</p>
+    <p>© 2026 Karo & Timo • gebaut mit HTML, CSS & JavaScript</p>
   </footer>
-<script src="klicker.js"></script>
 
+  <script src="klicker.js"></script>
 </body>
 </html>

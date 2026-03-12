@@ -3,28 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Spiel</title>
+  <title>Dino Runner – Karo & Timo</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <nav class="topnav">
-  <a href="index.html">Startseite</a>
+    <a href="index.html">Startseite</a>
 
-  <div class="dropdown">
-    <a href="spiel.html" class="dropbtn">Spiele</a>
-    <div class="dropdown-content">
-      <a href="spiel.html">Dino-Spiel</a>
-      <a href="klicker.html">Klicker-Spiel</a>
+    <div class="dropdown">
+      <a href="spiel.html" class="dropbtn active">Spiele</a>
+      <div class="dropdown-content">
+        <a href="spiel.html">🦖 Dino-Spiel</a>
+        <a href="klicker.html">💠 Klicker-Spiel</a>
+      </div>
     </div>
-  </div>
 
-  <a href="werke.html">Werke</a>
-  <a href="kontakt.html">Kontakt</a>
-</nav>
+    <a href="werke.html">Werke</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
 
   <header>
-    <h1>Dino Runner</h1>
+    <h1>🦖 Dino Runner</h1>
   </header>
 
   <main>
@@ -37,15 +37,17 @@
       <canvas id="game" width="900" height="260"></canvas>
 
       <p class="hint">
-        Steuerung: <b>Leertaste</b> / <b>Pfeil hoch</b> / <b>Klick</b> = Springen • <b>R</b> = Neustart
+        Steuerung: <b>Leertaste</b> / <b>Pfeil hoch</b> / <b>Klick</b> = Springen &nbsp;•&nbsp; <b>R</b> = Neustart
       </p>
 
-      <button id="restartBtn" class="restart-btn" type="button">Neustart</button>
+      <button id="restartBtn" class="restart-btn" type="button">↺ Neustart</button>
     </div>
   </main>
 
+  <div id="milestone-toast"></div>
+
   <footer>
-    <p>© 2026 Karo & Timo</p>
+    <p>© 2026 Karo & Timo • gebaut mit HTML, CSS & JavaScript</p>
   </footer>
 
   <script src="dino.js"></script>
